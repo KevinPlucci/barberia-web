@@ -149,9 +149,25 @@ td, th{
 }
 
 /*CSS para nuestra home*/
-
 .banner{
     width: 100%;
+}
+
+main  > p{
+    background: red;
+}
+/*elemento > hijo*/
+
+img + p{
+    background: yellow;
+}
+
+img ~ p{
+    background: green;
+}
+
+.principal p:not(#mision){
+    background:orange
 }
 
 .principal{
@@ -221,7 +237,7 @@ td, th{
     line-height: 1.5;
 }
 
-.items::before{
+.items:before{
     content: "★";
 }
 
